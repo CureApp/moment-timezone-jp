@@ -1,6 +1,6 @@
 {
   "name": "moment-timezone-jp",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "軽量に(=browser等にやさしく、無駄なものを省いて)momentのデフォルトタイムゾーンをJSTにする",
   "main": "index.js",
   "scripts": {
