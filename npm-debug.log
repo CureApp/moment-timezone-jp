@@ -1,0 +1,105 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/bin/node', '/usr/local/bin/npm', 'publish' ]
+2 info using npm@2.15.5
+3 info using node@v4.4.5
+4 verbose publish [ '.' ]
+5 silly cache add args [ '.', null ]
+6 verbose cache add spec .
+7 silly cache add parsed spec Result {
+7 silly cache add   raw: '.',
+7 silly cache add   scope: null,
+7 silly cache add   name: null,
+7 silly cache add   rawSpec: '.',
+7 silly cache add   spec: '/Users/suzukinaomi/cureapp/moment-timezone-jp',
+7 silly cache add   type: 'directory' }
+8 verbose addLocalDirectory /Users/suzukinaomi/.npm/moment-timezone-jp/1.1.1/package.tgz not in flight; packing
+9 verbose correctMkdir /Users/suzukinaomi/.npm correctMkdir not in flight; initializing
+10 verbose tar pack [ '/Users/suzukinaomi/.npm/moment-timezone-jp/1.1.1/package.tgz',
+10 verbose tar pack   '/Users/suzukinaomi/cureapp/moment-timezone-jp' ]
+11 verbose tarball /Users/suzukinaomi/.npm/moment-timezone-jp/1.1.1/package.tgz
+12 verbose folder /Users/suzukinaomi/cureapp/moment-timezone-jp
+13 info prepublish moment-timezone-jp@1.1.1
+14 verbose addLocalTarball adding from inside cache /Users/suzukinaomi/.npm/moment-timezone-jp/1.1.1/package.tgz
+15 verbose correctMkdir /Users/suzukinaomi/.npm correctMkdir not in flight; initializing
+16 silly cache afterAdd moment-timezone-jp@1.1.1
+17 verbose afterAdd /Users/suzukinaomi/.npm/moment-timezone-jp/1.1.1/package/package.json not in flight; writing
+18 verbose correctMkdir /Users/suzukinaomi/.npm correctMkdir not in flight; initializing
+19 verbose afterAdd /Users/suzukinaomi/.npm/moment-timezone-jp/1.1.1/package/package.json written
+20 silly publish { name: 'moment-timezone-jp',
+20 silly publish   version: '1.1.1',
+20 silly publish   description: '軽量に(=browser等にやさしく、無駄なものを省いて)momentのデフォルトタイムゾーンをJSTにする',
+20 silly publish   main: 'index.js',
+20 silly publish   scripts: { test: 'node test.js' },
+20 silly publish   author: { name: 'CureApp, Inc.' },
+20 silly publish   license: 'MIT',
+20 silly publish   dependencies: { 'moment-timezone': '~0.5.4', moment: '2.6 - 2.12' },
+20 silly publish   repository:
+20 silly publish    { type: 'git',
+20 silly publish      url: 'https://github.com/CureApp/moment-timezone-jp.git' },
+20 silly publish   bugs: { url: 'https://github.com/CureApp/moment-timezone-jp/issues' },
+20 silly publish   homepage: 'https://github.com/CureApp/moment-timezone-jp',
+20 silly publish   keywords: [ 'moment', 'timezone', 'Japan' ],
+20 silly publish   readme: '# moment-timezone-jp\n\n[momentjs](http://momentjs.com)で日本のtimezoneをデフォルトにできます。\n\n環境を選ばず利用できます。\n主にbrowserでの用途(bundleしたりとか)に便利。\n\nちなみにソースは4行。\nカスタマイズしたければソースをマネしたほうが早いですね。\n\nmomentの代わりに使うといいです。\n\n## どのぐらい軽量になったのか\n\nbrowserifyしたファイルを比べてみました。\n\n```text\nbefore 312941 byte # 全timezoneの設定がある場合\nafter  133262 byte # Japanの設定だけの場合\n```\n\n175kbほど削減できました。\ntimezoneの全設定JSONファイルがそれぐらい大きいのです。\n\n当然、そのファイルを読んでtimezoneを解釈する時間もなくなりますので、\nユーザーに優しいといえます。\n\n機能は日本で使う限り、当然ながら、元のmoment-timezoneと全く同等です。\n\n\n## インストール\n```bash\nnpm install moment-timezone-jp\n```\n\n## 使い方\n\n```js\nvar moment = require(\'moment-timezone-jp\');\nmoment();  // momentjsと同じインターフェイス\n```\n',
+20 silly publish   readmeFilename: 'README.md',
+20 silly publish   gitHead: '9d4ce1ef523a6dece33dc9cb7c49dce29ca8f674',
+20 silly publish   _id: 'moment-timezone-jp@1.1.1',
+20 silly publish   _shasum: 'e40e7fbf19db1dc33b3a21a856f238caf665042d',
+20 silly publish   _from: '.' }
+21 verbose getPublishConfig undefined
+22 silly mapToRegistry name moment-timezone-jp
+23 silly mapToRegistry using default registry
+24 silly mapToRegistry registry https://registry.npmjs.org/
+25 silly mapToRegistry data Result {
+25 silly mapToRegistry   raw: 'moment-timezone-jp',
+25 silly mapToRegistry   scope: null,
+25 silly mapToRegistry   name: 'moment-timezone-jp',
+25 silly mapToRegistry   rawSpec: '',
+25 silly mapToRegistry   spec: 'latest',
+25 silly mapToRegistry   type: 'tag' }
+26 silly mapToRegistry uri https://registry.npmjs.org/moment-timezone-jp
+27 verbose publish registryBase https://registry.npmjs.org/
+28 silly publish uploading /Users/suzukinaomi/.npm/moment-timezone-jp/1.1.1/package.tgz
+29 verbose request uri https://registry.npmjs.org/moment-timezone-jp
+30 verbose request sending authorization for write operation
+31 info attempt registry request try #1 at 10:49:15
+32 verbose request using bearer token for auth
+33 verbose request id 400e2294e4d3a33f
+34 http request PUT https://registry.npmjs.org/moment-timezone-jp
+35 http 403 https://registry.npmjs.org/moment-timezone-jp
+36 verbose headers { 'content-type': 'application/json',
+36 verbose headers   'cache-control': 'max-age=300',
+36 verbose headers   'content-length': '95',
+36 verbose headers   'accept-ranges': 'bytes',
+36 verbose headers   date: 'Fri, 22 Jul 2016 01:49:14 GMT',
+36 verbose headers   via: '1.1 varnish',
+36 verbose headers   connection: 'keep-alive',
+36 verbose headers   'x-served-by': 'cache-nrt6135-NRT',
+36 verbose headers   'x-cache': 'MISS',
+36 verbose headers   'x-cache-hits': '0',
+36 verbose headers   'x-timer': 'S1469152154.171440,VS0,VE579',
+36 verbose headers   vary: 'Accept-Encoding' }
+37 verbose request invalidating /Users/suzukinaomi/.npm/registry.npmjs.org/moment-timezone-jp on PUT
+38 error publish Failed PUT 403
+39 verbose stack Error: "You cannot publish over the previously published version 1.1.1." : moment-timezone-jp
+39 verbose stack     at makeError (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:264:12)
+39 verbose stack     at CachingRegistryClient.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:252:14)
+39 verbose stack     at Request._callback (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:172:14)
+39 verbose stack     at Request.self.callback (/usr/local/lib/node_modules/npm/node_modules/request/request.js:200:22)
+39 verbose stack     at emitTwo (events.js:87:13)
+39 verbose stack     at Request.emit (events.js:172:7)
+39 verbose stack     at Request.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:1067:10)
+39 verbose stack     at emitOne (events.js:82:20)
+39 verbose stack     at Request.emit (events.js:169:7)
+39 verbose stack     at IncomingMessage.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:988:12)
+40 verbose statusCode 403
+41 verbose pkgid moment-timezone-jp
+42 verbose cwd /Users/suzukinaomi/cureapp/moment-timezone-jp
+43 error Darwin 15.0.0
+44 error argv "/usr/local/bin/node" "/usr/local/bin/npm" "publish"
+45 error node v4.4.5
+46 error npm  v2.15.5
+47 error code E403
+48 error "You cannot publish over the previously published version 1.1.1." : moment-timezone-jp
+49 error If you need help, you may report this error at:
+49 error     <https://github.com/npm/npm/issues>
+50 verbose exit [ 1, true ]
