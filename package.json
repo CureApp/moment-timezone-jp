@@ -10,7 +10,7 @@
   "license": "MIT",
   "dependencies": {
     "moment-timezone": "~0.5.4",
-    "moment": "2.6 - 2.12"
+    "moment": "2.15.2"
   },
   "repository": {
     "type": "git",
