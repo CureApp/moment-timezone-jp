@@ -24,5 +24,9 @@
     "moment",
     "timezone",
     "Japan"
-  ]
+  ],
+  "devDependencies": {
+    "moment": "^2.19.1",
+    "moment-timezone": "^0.5.14"
+  }
 }
