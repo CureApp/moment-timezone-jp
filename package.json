@@ -9,8 +9,12 @@
   "author": "CureApp, Inc.",
   "license": "MIT",
   "peerDependencies": {
-    "moment-timezone": "0.5.x",
-    "moment": "2.x"
+    "moment": "2.x",
+    "moment-timezone": "0.5.x"
+  },
+  "devDependencies": {
+    "moment": "^2.19.1",
+    "moment-timezone": "^0.5.14"
   },
   "repository": {
     "type": "git",
